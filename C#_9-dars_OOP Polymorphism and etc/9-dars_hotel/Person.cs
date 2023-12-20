@@ -16,20 +16,29 @@ namespace C__9_dars_OOP_Polymorphism_and_etc._9_dars_hotel
 
         }
 
-        public ArrayList bemorlar = new ArrayList();
+        public List<Person> patients = new List<Person>();
 
         // Bemorni qo'shish
         public void addPatient(Person person)
         {
-            //var bemor = new Person(ismi, familiyasi, ssn);
-            bemorlar.Add(person);
-            Console.WriteLine("Bemor muvaffaqiyatli qo'shildi");
-            foreach(Person i in person.bemorlar)
-{
-                Console.Write(i.Name+ " ,");
-                Console.Write(i.Surname + ", ");
-                Console.Write(i.SSN);
+            patients.Add(person);
+            Console.WriteLine("Bemor muvaffaqiyatli qo'shildi\t");
+        }
+
+        //Bemorni qidirish
+        public void getPatient(string ssn)
+        {
+            for (int i = 0; i < patients.Count; i++)
+            {
+                if (patients[i].SSN == ssn)
+                {
+                    Console.WriteLine("Bu foydalanuvchi bor\t");
+                    Console.WriteLine(patients[i].Name);
+                    Console.WriteLine(patients[i].Surname);
+                    Console.WriteLine(patients[i].SSN);
+                }
             }
+            Console.WriteLine("exception is thrown\n budney aydili odam yoq");
         }
     }
 
