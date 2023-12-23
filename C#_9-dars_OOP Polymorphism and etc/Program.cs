@@ -17,29 +17,29 @@ Person person2 = new Person("Xushnud", "Egamberdiyev", "2");
 //person.addPatient(person2);
 #endregion
 #region T-1.2 bemor qidirish
-//person.addPatient(person2);
-//person.addPatient(person);
+person.addPatient(person2);
+person.addPatient(person);
 
-//Console.WriteLine("Kerak odamning iddsini kiriting ");
-//string idd = Console.ReadLine();
-//person.getPatient(idd);
+Console.WriteLine("Kerak odamning iddsini kiriting ");
+string idd = Console.ReadLine();
+person.getPatient(idd);
 #endregion
 
-Nurse shifokor = new Nurse("Yoqubov","Komil","10034","jarroh","10");
-Nurse shifokor2 = new Nurse("sherboyev", "Jovlon", "10023", "stamatolog", "11");
+//Nurse shifokor = new Nurse("Yoqubov","Komil","10034","jarroh","10");
+//Nurse shifokor2 = new Nurse("sherboyev", "Jovlon", "10023", "stamatolog", "11");
 
 #region T-2.1 shifokor qoshish
 //shifokor.addDoctor(shifokor);
 //shifokor.addDoctor(shifokor2);
 #endregion 
 
-shifokor.addDoctor(shifokor);
-shifokor.addDoctor(shifokor2);
-Console.WriteLine("Kerakli doctor iddsini kiritng ");
-string idd = Console.ReadLine();
-Console.WriteLine(shifokor.getDoctor(idd).Name);
-Console.WriteLine(shifokor.getDoctor(idd).Surname);
-Console.WriteLine(shifokor.getDoctor(idd).SSN);
+//shifokor.addDoctor(shifokor);
+//shifokor.addDoctor(shifokor2);
+//Console.WriteLine("Kerakli doctor iddsini kiritng ");
+//string idd = Console.ReadLine();
+//Console.WriteLine(shifokor.getDoctor(idd).Name);
+//Console.WriteLine(shifokor.getDoctor(idd).Surname);
+//Console.WriteLine(shifokor.getDoctor(idd).SSN);
 
 
 
