@@ -9,20 +9,20 @@ public class BankAccount
         {
             #region Tanlov qismi
             Console.Clear();
-            Console.Write("Kredit tanlang: \n" +
-                "<<1>> Ipoteka kredit\n" +
-                "<<2>> Mahina kredit\n" +
-                "<<3>> Maqsadsiz kredit\n" +
-                "<<4>> Imtiyozli kredit\n" +
-                "<<5>> Ta'lim kredit\n" +
-                "<<6>> Dasturni tugatish.\n" +
+            Console.Write("Kredit olmoqchi bolgan turni tanglang: \n" +
+                "<<Ipoteka>> Ipoteka kredit\n" +
+                "<<Mashina>> Mahina kredit\n" +
+                "<<Maqsadsiz>> Maqsadsiz kredit\n" +
+                "<<Imtiyozli>> Imtiyozli kredit\n" +
+                "<<Ta'lim>> Ta'lim kredit\n" +
+                "<<Remove>> Dasturni tugatish.\n" +
                 ">> ");
 
 
             string Tanlandi = Console.ReadLine()!;
             #endregion
             #region Ipoteka kredit
-            if (Tanlandi == "1")
+            if (Tanlandi == "Ipoteka")
             {
                 Console.Clear();
                 Console.Write("Miqdor kiriting>> ");
@@ -38,7 +38,7 @@ public class BankAccount
             }
             #endregion
             #region Mashina kredit
-            else if (Tanlandi == "2")
+            else if (Tanlandi == "Mahina")
             {
                 Console.Clear();
                 Console.Write("Miqdor kiriting>> ");
@@ -54,7 +54,7 @@ public class BankAccount
             }
             #endregion
             #region Maqsadsiz kredit
-            else if (Tanlandi == "3")
+            else if (Tanlandi == "Maqsadsiz")
             {
                 Console.Clear();
                 Console.Write("Miqdor kiriting>> ");
@@ -70,7 +70,7 @@ public class BankAccount
             }
             #endregion
             #region Imtiyozli kredit
-            else if (Tanlandi == "4")
+            else if (Tanlandi == "Imtiyozli")
             {
                 Console.Clear();
                 Console.Write("Miqdor kiriting>> ");
@@ -86,7 +86,7 @@ public class BankAccount
             }
             #endregion
             #region Talim kredit
-            else if (Tanlandi == "5")
+            else if (Tanlandi == "Ta'lim")
             {
                 Console.Clear();
                 Console.Write("Miqdor kiriting>> ");
@@ -102,7 +102,7 @@ public class BankAccount
             }
             #endregion
             #region
-            else if (Tanlandi == "6")
+            else if (Tanlandi == "Remove")
             {
                 Console.Clear();
                 Console.WriteLine("Hizmatimizdan foydalanganingiz uchun rahmat!");
