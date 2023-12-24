@@ -1,6 +1,7 @@
 ﻿
 using C__11_dars_tuple_Ilist;
 using System;
+using System.Collections.Concurrent;
 using System.Reflection;
 
 public class Program
@@ -78,15 +79,15 @@ public class Program
         var sortedStudents = new SortedList<int, Student>();
         #region 1 , 2 va 3 -misollar
 
-        //int sum = 0;
-        //while (sum < unsortedStudents.Length)
-        //{
-        //    #region 2-siga yeshim
-        //    sortedStudents.Add(unsortedStudents[sum].Id, unsortedStudents[sum]);
-        //    #endregion
-        //    Console.WriteLine($"ID: {unsortedStudents[sum].Id}, Name: {unsortedStudents[sum].FirstName} {unsortedStudents[sum].LastName}");
-        //    sum++;
-        //}
+        int sum = 0;
+        while (sum < unsortedStudents.Length)
+        {
+            #region 2-siga yeshim
+            sortedStudents.Add(unsortedStudents[sum].Id, unsortedStudents[sum]);
+            #endregion
+            //Console.WriteLine($"ID: {unsortedStudents[sum].Id}, Name: {unsortedStudents[sum].FirstName} {unsortedStudents[sum].LastName}");
+            sum++;
+        }
 
         #region 3-siga yechim
         //foreach (var item in sortedStudents)
@@ -107,9 +108,9 @@ public class Program
         #endregion
 
         var studentsQueueForFood = new Queue<Student>();
-        // TODO studentsQueueForFood  queue ga  Id 3, 4, 8, 17, 1, 6, 12 studentlarni qo'shing (Enqueue).
-        // Har bir studentni ketma-ketlikda consolega chiqaring Masalan. Shu Idga ega bo'lgan ovqatga navbatga turdi
-        // Har bir studentni ketma-ketlikda consolega chiqaring Masalan. Shu Idga ega bo'lgan student ovqatni oldi.
+        //TODO studentsQueueForFood  queue ga  Id 3, 4, 8, 17, 1, 6, 12 studentlarni qo'shing (Enqueue).
+        // Har bir studentni ketma-ketlikda consolega chiqaring Masalan.Shu Idga ega bo'lgan ovqatga navbatga turdi
+        // Har bir studentni ketma-ketlikda consolega chiqaring Masalan.Shu Idga ega bo'lgan student ovqatni oldi.
         #region 5-6-7 - Misollar
         //for (int i = 0; i < unsortedStudents.Length; i++)
         //{
@@ -159,7 +160,7 @@ public class Program
         //        || unsortedStudents[i].Id == 8 || unsortedStudents[i].Id == 7 || unsortedStudents[i].Id == 15 ||
         //        unsortedStudents[i].Id == 13 || unsortedStudents[i].Id == 20)
         //    {
-        //        studentsEnrolledMathCourse.Add(unsortedStudents[i]);
+        //        studentsEnrolledEnglishCourse.Add(unsortedStudents[i]);
         //    }
         //}
         #endregion
@@ -177,16 +178,54 @@ public class Program
         #endregion
 
         // TODO faqat matematikaga(ingliz tiliga emas) qatnashayotgan studentlarni consolega chiqaring (ExceptWith)
+        #region 12-misol 
+        //foreach (var item in studentsEnrolledMathCourse)
+        //{
+        //    if (  ! studentsEnrolledEnglishCourse.Contains(item))
+        //    {
+        //        Console.WriteLine($"{item.Id} , {item.FirstName} {item.LastName}");
+        //    }
+        //}
+        #endregion
 
         // TODO faqat ingliz tiliga(matematikaga emas) qatnashayotgan studentlarni consolega chiqaring (ExceptWith)
+        #region 13 - misol
+        //foreach (var item in studentsEnrolledEnglishCourse)
+        //{
+        //    if (! studentsEnrolledMathCourse.Contains(item))
+        //    {
+        //        Console.WriteLine($"{item.Id} , {item.FirstName} {item.LastName}");
+        //    }
+        //}
+        #endregion
 
         // TODO istalgan kursga qatnashayotgan studentlarni consolega chiqaring. (UnionWith)
-
-        // HashSetlar reference type. UnionWith, ExceptWith va IntersectWith chaqirilgan hashSetlarni o'zgartiradi.
+        #region 14-misol
+        //foreach (var item in studentsEnrolledEnglishCourse)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        //foreach (var item in studentsEnrolledMathCourse)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        #endregion
 
         // studentlarni id isiga ko'ra jurnalda saqlang. ma'lumotlarni sorted Listdan olib keling.
         var classJournal = new Dictionary<int, Student>();
+        #region 15-misol
+        //for (int i = 0; i < sortedStudents.Count; i++)
+        //{
+        //    classJournal.Add(i, sortedStudents[i]);
+        //}
+        #endregion
         // studentlarni jurnalini Consolega chiqaring.
+        #region 16-misol
+        //foreach (var item in classJournal)
+        //{
+        //    Console.WriteLine(item.Value);
+        //}
+        #endregion
     }
     #endregion
 }
