@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C#_11-dars_tuple_Ilist", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "c#_13-dars_delegate", "c#_13-dars_delegate\c#_13-dars_delegate.csproj", "{E9602BA2-47DE-487B-BE00-818AD9D86438}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#_14-dars_action_pridicate", "C#_14-dars_action_pridicate\C#_14-dars_action_pridicate.csproj", "{96B03C7B-AC82-4C3D-AA02-9DF05BBBE271}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C#_14-dars_action_pridicate", "C#_14-dars_action_pridicate\C#_14-dars_action_pridicate.csproj", "{96B03C7B-AC82-4C3D-AA02-9DF05BBBE271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16_lesson_exception_datatimes_stringbuilder_regex", "16_lesson_exception_datatimes_stringbuilder_regex\16_lesson_exception_datatimes_stringbuilder_regex.csproj", "{3616ABF2-767A-4433-992C-C2EAC081EED7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{96B03C7B-AC82-4C3D-AA02-9DF05BBBE271}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96B03C7B-AC82-4C3D-AA02-9DF05BBBE271}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96B03C7B-AC82-4C3D-AA02-9DF05BBBE271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3616ABF2-767A-4433-992C-C2EAC081EED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3616ABF2-767A-4433-992C-C2EAC081EED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3616ABF2-767A-4433-992C-C2EAC081EED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3616ABF2-767A-4433-992C-C2EAC081EED7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

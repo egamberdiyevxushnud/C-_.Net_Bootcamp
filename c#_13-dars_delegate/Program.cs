@@ -72,7 +72,7 @@ public class BankAccount
             #region Imtiyozli kredit
             else if (Tanlandi == "Imtiyozli")
             {
-                Console.Clear();
+                Console.Clear(); 
                 Console.Write("Miqdor kiriting>> ");
                 
                 double sum = double.Parse(Console.ReadLine()!);

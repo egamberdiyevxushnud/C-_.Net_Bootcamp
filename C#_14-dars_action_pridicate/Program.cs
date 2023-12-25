@@ -10,7 +10,7 @@
         static void Main(string[] args)
         {
 
-            int[] array = [5, 6, 1, 2, 3, 10];
+            int[] array = [5, 6, 1, 2, 3, 7];
 
             SortArray(array, func: AscendingSort);
             Console.WriteLine("O'sish tartibda tartiblangan.");
