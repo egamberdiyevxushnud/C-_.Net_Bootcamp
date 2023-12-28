@@ -9,7 +9,7 @@ namespace _16_lesson_exception_datatimes_stringbuilder_regex.Homework
         {
             Console.Write(">> ");
             string user = Console.ReadLine()!;
-            //IsPasswordValidation("Tohirjon#9");
+            //IsPasswordValidation("Xushnud#9");
 
             if (userSelection == "1")
             {
@@ -40,7 +40,7 @@ namespace _16_lesson_exception_datatimes_stringbuilder_regex.Homework
         public bool IsEmailValidation(string email)
         {
             string pattern = @"^[a-z0-9_-]+@[a-z0-9]+\.[a-z]{2,}$";
-            //bool isValidEmail = Regex.IsMatch("tohirjon-odilov@gmail.com", pattern);
+            //bool isValidEmail = Regex.IsMatch("xushnud-egamberdiyev@gmail.com", pattern);
             bool isValidEmail = Regex.IsMatch(email, pattern);
             Console.WriteLine(isValidEmail);
             return true;
@@ -48,7 +48,7 @@ namespace _16_lesson_exception_datatimes_stringbuilder_regex.Homework
         public bool IsPhoneNumberValidation(string phoneNumber)
         {
             string pattern = @"^[+]998\s(\d{2})\s(\d{3})\s(\d{2})\s(\d{2})$";
-            //bool isValidPhoneNumber = Regex.IsMatch("+998 99 873 49 75", pattern);
+            //bool isValidPhoneNumber = Regex.IsMatch("+998 95 000 80 02", pattern);
             bool isValidPhoneNumber = Regex.IsMatch(phoneNumber, pattern);
             Console.WriteLine(isValidPhoneNumber);
             return true;
@@ -56,7 +56,7 @@ namespace _16_lesson_exception_datatimes_stringbuilder_regex.Homework
         public void IsPasswordValidation(string password)
         {
             string pattern = @"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{9,16}$";
-            //bool isValidPassword = Regex.IsMatch("Tohirjon_2312", pattern);
+            //bool isValidPassword = Regex.IsMatch("Xushnud_2312", pattern);
             bool isValidPassword = Regex.IsMatch(password, pattern);
             if (isValidPassword)
             {
