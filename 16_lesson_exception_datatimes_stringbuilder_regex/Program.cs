@@ -4,6 +4,7 @@ namespace _16_lesson_exception_datatimes_stringbuilder_regex.Homework
 {
     internal class Task3_Registration
     {
+        public static void Main() { }
         //private string UserSelection {  get; set; }
         public Task3_Registration(string userSelection)
         {
