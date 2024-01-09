@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C__21_dars_Json_Model
+namespace c__20_dars_Json
 {
-    public class Class2
+    public interface IProductRUDS
     {
+        public void AddProduct(Product product);
     }
 }

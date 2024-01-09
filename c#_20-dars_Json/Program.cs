@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using c__20_dars_Json.Servies;
+using System.Text.Json;
 
 namespace c__20_dars_Json
 {
@@ -6,21 +7,19 @@ namespace c__20_dars_Json
     {
         static void Main(string[] args)
         {
-            MyModel myModel = new MyModel()
-            {
-                Id = 1,
-                FirstName = "Xushnud",
-                LastName = "Egamberdiyev",
-                Age = 17,
-            };
+            string path = $"D:\\Json\\Users.json";
+            
 
-            // json serislizer => model to Json
-            // json Deserialazer => Json to Model
+            Product product = new Product();
+            product.Name = "Telefon";
+            product.Id = 1;
+            product.Description = "128GB";
 
-            string json = JsonSerializer.Serialize(myModel);
+            IProductRUDS servise = new ProductServise();
 
-            Console.WriteLine(json);
+            servise.AddProduct(product);
 
         }
     }
 }
+ 
